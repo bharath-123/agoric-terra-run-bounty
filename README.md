@@ -34,5 +34,7 @@ keys from a mnemonic. We need to specify terra's hd path while restoring the key
 Files:
 
 hermes-config.toml: The config of the hermes relayer used to send RUN from agoric to terra. The hermes relayer was run on my local machine
+
 hermes-commands.sh: The commands used to create the ibc-channel, restore terra/agoric keys and transfer tokens from agoric to Terra
+
 terra-lp-scripts.ts: Scripts to create a RUN/UST liquidity pool and to provide liquidity to the pool
