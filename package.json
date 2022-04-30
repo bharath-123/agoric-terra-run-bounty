@@ -1,0 +1,10 @@
+{
+  "name": "terra-run-bridge",
+  "version": "1.0.0",
+  "dependencies": {
+    "@terra-money/terra.js": "^3.0.11"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
