@@ -1,4 +1,4 @@
-# agoric-terra-run-bounty
+## agoric-terra-run-bounty
 
 Run Token IBC denom: ibc/1F70B965BDA2F3D6E5244B00B70F4F2F620E76906931D97D209458476ADB76BD
 
@@ -22,7 +22,7 @@ Liquidity provision tx: https://finder.terra.money/testnet/tx/9B8F73EEE39EF7BC50
 Pool creation tx: https://finder.terra.money/testnet/tx/C1F78FF2515857C0F7D459DA45BCB98DA41711EBBE7BB125196F325FDBE2F0D3
 
 
-Main Challenges:
+## Main Challenges:
 
 1. Terra does not have a lot of public nodes with open grpc ports which are required for hermes. To work around this, we worked with figment to open their node grpc 
 ports. But to access this we still have to pass an api key. To work around this, I hacked around ibc-rs to include api keys in the call. Future work will be to support
@@ -31,10 +31,15 @@ grpc/rest authentication which will required when we need to setup ibc relayers 
 2. Terra has a separate hd path. I faced issues when restoring terra keys as the mnemonic to pub key derivation in terra is different from how hermes derives public
 keys from a mnemonic. We need to specify terra's hd path while restoring the keys which is m/44'/330'/0'/0/0 
 
-Files:
+## Files:
 
 hermes-config.toml: The config of the hermes relayer used to send RUN from agoric to terra. The hermes relayer was run on my local machine
 
 hermes-commands.sh: The commands used to create the ibc-channel, restore terra/agoric keys and transfer tokens from agoric to Terra
 
 terra-lp-scripts.ts: Scripts to create a RUN/UST liquidity pool and to provide liquidity to the pool
+
+
+## Video Explaining the above steps:
+
+https://drive.google.com/drive/folders/16K5t6jP4ySeW0QlvlYBWirv6RG-jlhRO?usp=sharing
