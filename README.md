@@ -1,5 +1,7 @@
 ## agoric-terra-run-bounty
 
+This repo represent the work done as part of this gitcoin bounty: https://gitcoin.co/issue/agoric/agoric-sdk/3993/100027320
+
 Run Token IBC denom: ibc/1F70B965BDA2F3D6E5244B00B70F4F2F620E76906931D97D209458476ADB76BD
 
 RUN/UST pool address: terra18zatp3ds9ukp450k3nv2xr4k777fyrrfcckcxl
